@@ -1,14 +1,14 @@
 package org.example.controller;
 
 import lombok.extern.log4j.Log4j;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
-import lombok.var;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+
+import javax.annotation.PostConstruct;
 
 
 @Component
@@ -19,6 +19,18 @@ public class TelegramBot extends TelegramLongPollingBot {
     private String botName;
     @Value("${bot.token}")
     private String botToken;
+
+    private UpdateController updateController;
+    public TelegramBot(UpdateController updateController) {
+        this.updateController = updateController;
+    }
+    @PostConstruct
+    public void init(){
+        updateController.registerBot(this);
+    }
+
+
+
 
     //private static final Logger log = Logger.getLogger(TelegramBot.class);
     @Override
@@ -33,13 +45,13 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        var originalMessage = update.getMessage();
-        log.debug(originalMessage.getText());
-
-        var responce = new SendMessage();
+        /*var originalMessage = update.getMessage();
+        log.debug(originalMessage.getText());*/
+        updateController.processUpdate(update);
+        /*var responce = new SendMessage();
         responce.setChatId(originalMessage.getChatId().toString());
         responce.setText("Hello from bot");
-        sendAnswerMessage(responce);
+        sendAnswerMessage(responce);*/
     }
 
     public void sendAnswerMessage(SendMessage message){
