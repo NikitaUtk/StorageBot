@@ -59,7 +59,7 @@ public class UpdateController {
         var sendMessage = messageUtils.generateSendMessageWithText(update, "File received, is processed...");
         setView(sendMessage);
     }
-    private void setView(SendMessage sendMessage) {
+    public void setView(SendMessage sendMessage) {
         telegramBot.sendAnswerMessage(sendMessage);
     }
 
