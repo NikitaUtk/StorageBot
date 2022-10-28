@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef9dee3-d7f0-4e0a-98c9-94541bdedae2" name="Changes" comment="add module NODE">
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/dao/RawDataDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/entity/RawData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/MainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="cef9dee3-d7f0-4e0a-98c9-94541bdedae2" name="Changes" comment="add message to database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/service/impl/AnswerConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/service/impl/AnswerConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ConsumerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/test/java/org/example/MainServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +84,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DispatcherApplication">
-    <configuration name="DispatcherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.org.example.DispatcherApplication">
+    <configuration name="org.example.DispatcherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.DispatcherApplication" />
       <module name="dispatcher" />
       <extension name="coverage">
@@ -104,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="org.example.NodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.NodeApplication" />
       <module name="node" />
       <extension name="coverage">
@@ -119,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.NodeApplication" />
+        <item itemvalue="Application.org.example.DispatcherApplication" />
+        <item itemvalue="Application.org.example.NodeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666168064377</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add message to database">
+      <created>1666996731522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666996731522</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +181,7 @@
     <MESSAGE value="app properties" />
     <MESSAGE value="add RabbitMQ" />
     <MESSAGE value="add module NODE" />
-    <option name="LAST_COMMIT_MESSAGE" value="add module NODE" />
+    <MESSAGE value="add message to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="add message to database" />
   </component>
 </project>
