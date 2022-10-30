@@ -1,0 +1,13 @@
+2022-10-16 15:28:02 DEBUG TelegramBot:33 - test
+2022-10-16 15:40:51 DEBUG TelegramBot:37 - test
+2022-10-16 19:06:55 DEBUG TelegramBot:37 - start
+2022-10-16 22:07:28 DEBUG TelegramBot:51 - asda
+2022-10-17 12:25:15 DEBUG UpdateProducerImpl:13 - test
+2022-10-17 13:29:41 ERROR UpdateController:37 - Unsupported message type is received: Update(updateId=518109113, message=null, inlineQuery=null, chosenInlineQuery=null, callbackQuery=null, editedMessage=Message(messageId=13, from=User(id=473964592, firstName=Nikita, isBot=false, lastName=null, userName=nseutkin, languageCode=ru, canJoinGroups=null, canReadAllGroupMessages=null, supportInlineQueries=null, isPremium=null, addedToAttachmentMenu=null), date=1665995114, chat=Chat(id=473964592, type=private, title=null, firstName=Nikita, lastName=null, userName=nseutkin, photo=null, description=null, inviteLink=null, pinnedMessage=null, stickerSetName=null, canSetStickerSet=null, permissions=null, slowModeDelay=null, bio=null, linkedChatId=null, location=null, messageAutoDeleteTime=null, hasPrivateForwards=null, HasProtectedContent=null, joinToSendMessages=null, joinByRequest=null), forwardFrom=null, forwardFromChat=null, forwardDate=null, text=testsad, entities=null, captionEntities=null, audio=null, document=null, photo=null, sticker=null, video=null, contact=null, location=null, venue=null, animation=null, pinnedMessage=null, newChatMembers=[], leftChatMember=null, newChatTitle=null, newChatPhoto=null, deleteChatPhoto=null, groupchatCreated=null, replyToMessage=null, voice=null, caption=null, superGroupCreated=null, channelChatCreated=null, migrateToChatId=null, migrateFromChatId=null, editDate=1665998980, game=null, forwardFromMessageId=null, invoice=null, successfulPayment=null, videoNote=null, authorSignature=null, forwardSignature=null, mediaGroupId=null, connectedWebsite=null, passportData=null, forwardSenderName=null, poll=null, replyMarkup=null, dice=null, viaBot=null, senderChat=null, proximityAlertTriggered=null, messageAutoDeleteTimerChanged=null, isAutomaticForward=null, hasProtectedContent=null, webAppData=null, videoChatStarted=null, videoChatEnded=null, videoChatParticipantsInvited=null, videoChatScheduled=null), channelPost=null, editedChannelPost=null, shippingQuery=null, preCheckoutQuery=null, poll=null, pollAnswer=null, myChatMember=null, chatMember=null, chatJoinRequest=null)
+2022-10-17 13:30:11 DEBUG UpdateProducerImpl:13 - 
+2022-10-17 16:11:32 DEBUG UpdateProducerImpl:21 - hello
+2022-10-17 16:12:10 DEBUG UpdateProducerImpl:21 - 
+2022-10-19 11:37:13 DEBUG UpdateProducerImpl:21 - фыв
+2022-10-19 12:04:51 DEBUG UpdateProducerImpl:21 - hello from chat
+2022-10-19 12:04:54 DEBUG UpdateProducerImpl:21 - a
+2022-10-29 02:35:48 DEBUG UpdateProducerImpl:21 - hi
