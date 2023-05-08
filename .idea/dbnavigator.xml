@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="69d6e33f-712e-46fb-b9b9-9ef301c2fc8e">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from app_user]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from binary_content]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -39,6 +39,8 @@
     <connection id="69d6e33f-712e-46fb-b9b9-9ef301c2fc8e" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="69d6e33f-712e-46fb-b9b9-9ef301c2fc8e" dataset="public.app_photo" active-filter-id="" />
+    <filter-actions connection-id="69d6e33f-712e-46fb-b9b9-9ef301c2fc8e" dataset="public.app_document" active-filter-id="" />
     <filter-actions connection-id="69d6e33f-712e-46fb-b9b9-9ef301c2fc8e" dataset="public.app_user" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">

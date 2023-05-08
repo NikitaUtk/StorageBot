@@ -1,7 +1,6 @@
 package org.example.controller;
 
 import lombok.extern.log4j.Log4j;
-import lombok.var;
 import org.example.service.UpdateProducer;
 import org.example.utils.MessageUtils;
 import org.springframework.stereotype.Component;

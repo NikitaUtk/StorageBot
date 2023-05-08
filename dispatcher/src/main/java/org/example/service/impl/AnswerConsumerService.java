@@ -22,5 +22,4 @@ public class AnswerConsumerService implements AnswerConsumer {
     public void consume(SendMessage sendMessage) {
         updateController.setView(sendMessage);
     }
-    int [] arr = {1,2,3};
 }
