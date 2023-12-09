@@ -4,54 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef9dee3-d7f0-4e0a-98c9-94541bdedae2" name="Changes" comment="delete annotation @Data">
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppDocumentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppPhotoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/BinaryContentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppPhoto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/BinaryContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-utils/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-utils/src/main/java/org/example/utils/CryptoTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-utils/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/configuration/NodeConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/exceptions/UploadFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/AppUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/enums/LinkType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/enums/ServiceCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/RestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/configuration/RestServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/sevice/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/sevice/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-service/src/test/java/org/example/AppTest.java" afterDir="false" />
+    <list default="true" id="cef9dee3-d7f0-4e0a-98c9-94541bdedae2" name="Changes" comment="add rest-service">
+      <change afterPath="$PROJECT_DIR$/common-utils/src/main/java/org/example/dto/MailParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/org/example/DataBaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/db/changelog/main-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/db/changelog/v1/create_all_tables.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/org/example/MailApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/org/example/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/org/example/dto/MailParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/org/example/service/MailSenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/java/org/example/service/impl/MailSenderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/controller/ActivationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/sevice/UserActivationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-service/src/main/java/org/example/sevice/impl/UserActivationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/dao/AppUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/service/impl/AnswerConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/service/impl/AnswerConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/utils/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/utils/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/node.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/node.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mail-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail-service/src/main/java/org/example/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/ConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/AppUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,16 +60,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/lombok/Value.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/logs/dispatcher.log" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/java/org/example/MailApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/java/org/example/controller/MailController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/java/org/example/dto/MailParams.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/java/org/example/service/MailSenderService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/java/org/example/service/impl/MailSenderServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mail-service/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/node/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
@@ -92,6 +80,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2GD3YOA0lcQxiFGX2jQdeqfNfrV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -100,15 +91,39 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/Nikita/Projects/Java/StorageBot/common-utils/src/main",
-    "project.structure.last.edited": "Project",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Nikita/Projects/Java/Spring/LibraryAppBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Nikita/Projects/Java/StorageBot/database/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "scala_project_settings_configurable.last_selected_tab_index": "0",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "oracle"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTTP Request",
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -120,33 +135,36 @@
       <recent name="D:\Nikita\Projects\Java\StorageBot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Nikita\Projects\Java\StorageBot\database\src\main\resources\db" />
+      <recent name="C:\Nikita\Projects\Java\StorageBot\database\src\main\resources" />
+      <recent name="C:\Nikita\Projects\Java\StorageBot\database\src\main\resources\db\changelog" />
       <recent name="D:\Nikita\Projects\Java\StorageBot\common-rabbitmq\src\main\java\org\example\model" />
       <recent name="D:\Nikita\Projects\Java\StorageBot\dispatcher\src\main\java\resources" />
-      <recent name="D:\Nikita\Projects\Java\StorageBot\dispatcher\src\main\java\org\example\controller" />
-      <recent name="D:\Nikita\Projects\Java\StorageBot\dispatcher\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.configuration" />
+      <recent name="" />
       <recent name="org.example" />
+      <recent name="org.example.configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RestService">
-    <configuration name="RestService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.RestService" />
-      <module name="rest-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DataBaseApplication">
+    <configuration name="DataBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DataBaseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.DispatcherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.DispatcherApplication" />
+    <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dispatcher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -157,9 +175,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.NodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.NodeApplication" />
+    <configuration name="MailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mail-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.MailApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.NodeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rest-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.RestService" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -172,9 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestService" />
-        <item itemvalue="Application.org.example.NodeApplication" />
-        <item itemvalue="Application.org.example.DispatcherApplication" />
+        <item itemvalue="Spring Boot.DataBaseApplication" />
+        <item itemvalue="Spring Boot.RestService" />
+        <item itemvalue="Spring Boot.MailApplication" />
+        <item itemvalue="Spring Boot.DispatcherApplication" />
+        <item itemvalue="Spring Boot.NodeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +232,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665909375008</updated>
+      <workItem from="1700666575044" duration="838000" />
+      <workItem from="1700730488473" duration="7114000" />
+      <workItem from="1700806669523" duration="1200000" />
+      <workItem from="1700914904844" duration="612000" />
+      <workItem from="1700927581740" duration="595000" />
+      <workItem from="1701081575679" duration="598000" />
+      <workItem from="1701121474417" duration="597000" />
+      <workItem from="1701257186910" duration="1212000" />
+      <workItem from="1701438288949" duration="15188000" />
+      <workItem from="1701944417837" duration="614000" />
+      <workItem from="1701945445636" duration="23056000" />
+      <workItem from="1702119146521" duration="4972000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665915520846</created>
@@ -229,8 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1666997796298</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add rest-service">
+      <created>1683576183046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683576183046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -250,7 +318,34 @@
     <MESSAGE value="add module NODE" />
     <MESSAGE value="add message to database" />
     <MESSAGE value="delete annotation @Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete annotation @Data" />
+    <MESSAGE value="add rest-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rest-service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/node/src/main/java/org/example/service/impl/MainServiceImpl.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/node/src/main/java/org/example/service/impl/FileServiceImpl.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mail-service/src/main/java/org/example/controller/MailController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/database/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

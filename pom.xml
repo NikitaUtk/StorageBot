@@ -16,6 +16,7 @@
     <module>common-utils</module>
     <module>rest-service</module>
     <module>mail-service</module>
+    <module>database</module>
   </modules>
 
   <name>StorageBot</name>
@@ -52,7 +53,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
+      <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
 

@@ -98,15 +98,13 @@ public class MainServiceImpl implements MainService {
         try{
             AppPhoto photo = fileService.processPhoto(update.getMessage());
             String link = fileService.generateLink(photo.getId(), LinkType.GET_PHOTO);
-            var answer = "Фотто доступен для скачивания! Ссылка для скачивания:" + link;
+            var answer = "Фото доступно для скачивания! Ссылка для скачивания:" + link;
             sendAnswer(answer, chatId);
         } catch (UploadFileException ex) {
             log.error(ex);
             String error = "Загрузка файла не удалась. Повторите попытку позже";
             sendAnswer(error, chatId);
         }
-        var answer = "Документ доступен для скачивания! Ссылка для скачивания: http://test.ru/get-photo/777";
-        sendAnswer(answer, chatId);
     }
     private boolean isNotAllowToSendContent(Long chatId, AppUser appUser) {
         var userState = appUser.getUserState();
@@ -158,20 +156,19 @@ public class MainServiceImpl implements MainService {
 
         User telegramUser = update.getMessage().getFrom();
 
-        AppUser persistentAppUser = appUserDao.findAppUserByTelegramUserId(telegramUser.getId());
-        if(persistentAppUser == null){
+        var persistentAppUser = appUserDao.findByTelegramUserId(telegramUser.getId());
+        if(!persistentAppUser.isPresent()){
             AppUser transientAppUser = AppUser.builder()
                     .telegramUserId(telegramUser.getId())
                     .userName(telegramUser.getUserName())
                     .firstName(telegramUser.getFirstName())
                     .lastName(telegramUser.getLastName())
-                    //TODO изменить значения по умолчанию после добавления регистрации
-                    .isActive(true)
+                    .isActive(false)
                     .userState(BASIC_STATE)
                     .build();
             return appUserDao.save(transientAppUser);
         }
-        return persistentAppUser;
+        return persistentAppUser.get();
     }
 
     private void saveRawData(Update update) {

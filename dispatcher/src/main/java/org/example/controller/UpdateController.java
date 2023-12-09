@@ -31,20 +31,20 @@ public class UpdateController {
             return;
         }
         if(update.hasMessage()){
-            DistributeMessageByType(update);
+            distributeMessageByType(update);
         }else {
             log.error("Unsupported message type is received: " + update);
         }
     }
 
-    private void DistributeMessageByType(Update update) {
+    private void distributeMessageByType(Update update) {
         var message = update.getMessage();
         if(message.hasText()){
-            ProcessTextMessage(update);
+            processTextMessage(update);
         }else if (message.hasDocument()){
-            ProcessDocMessage(update);
+            processDocMessage(update);
         }else if (message.hasPhoto()){
-            ProcessPhotoMessage(update);
+            processPhotoMessage(update);
         }else{
             setUnsupportetMessageTypeView(update);
         }
@@ -62,17 +62,17 @@ public class UpdateController {
         telegramBot.sendAnswerMessage(sendMessage);
     }
 
-    private void ProcessPhotoMessage(Update update) {
+    private void processPhotoMessage(Update update) {
         updateProducer.producer(PHOTO_MESSAGE_UPDATE, update);
         setFileIsReceivedView(update);
     }
 
-    private void ProcessDocMessage(Update update) {
+    private void processDocMessage(Update update) {
         updateProducer.producer(DOC_MESSAGE_UPDATE, update);
         setFileIsReceivedView(update);
     }
 
-    private void ProcessTextMessage(Update update) {
+    private void processTextMessage(Update update) {
         updateProducer.producer(TEXT_MESSAGE_UPDATE, update);
     }
 }
