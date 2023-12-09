@@ -20,6 +20,7 @@ import org.example.service.FileService;
 import org.example.service.enums.LinkType;
 import org.example.utils.CryptoTool;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -36,6 +37,7 @@ public class FileServiceImpl implements FileService {
     private String fileStorageUri;
     @Value("${link.address}")
     private String linkAddress;
+    private static final int BUFFER_SIZE = 8192;
     private final AppDocumentDao appDocumentDao;
     private final AppPhotoDao appPhotoDao;
     private final BinaryContentDao binaryContentDao;
@@ -116,15 +118,24 @@ public class FileServiceImpl implements FileService {
     private byte[] downloadFile(String filePath) {
         String fillUri = fileStorageUri.replace("{token}", token)
                 .replace("{filePath}", filePath);
-        URL urlObj = null;
+        URL urlObj;
         try {
             urlObj = new URL(fillUri);
         } catch (MalformedURLException e) {
             throw new UploadFileException(e);
         }
 
-        try(InputStream is = urlObj.openStream()){
-            return is.readAllBytes();
+        try (InputStream is = urlObj.openStream();
+             ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+
+            byte[] buffer = new byte[BUFFER_SIZE];
+            int bytesRead;
+
+            while ((bytesRead = is.read(buffer, 0, BUFFER_SIZE)) != -1) {
+                baos.write(buffer, 0, bytesRead);
+            }
+
+            return baos.toByteArray();
         } catch (IOException e) {
             throw new UploadFileException(urlObj.toExternalForm(), e);
         }
